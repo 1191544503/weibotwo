@@ -25,7 +25,8 @@ class UsersController extends Controller
             'email'=>$request->email,
             'password'=>bcrypt($request->password),
         ]);
-      //  Auth::login($user);
+        Auth::login($user);
+
         session()->flash('success',"欢迎注册成功");
         return redirect()->route('users.show',[$user]);
     }

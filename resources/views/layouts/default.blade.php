@@ -12,4 +12,5 @@
 </div>
 
 </body>
+<script src="/weibo/public/js/app.js"></script>
 </html>
